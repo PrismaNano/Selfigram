@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582843741F8458C300A9651A /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582843731F8458C300A9651A /* FeedTableViewController.swift */; };
+		584E94F51F8702410015F0E9 /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E94F41F8702410015F0E9 /* SelfieCell.swift */; };
 		5869DB791F7385D700B0A062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5869DB781F7385D700B0A062 /* AppDelegate.swift */; };
 		5869DB7B1F7385D700B0A062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5869DB7A1F7385D700B0A062 /* ViewController.swift */; };
 		5869DB7E1F7385D700B0A062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5869DB7C1F7385D700B0A062 /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		5869DB831F7385D700B0A062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5869DB811F7385D700B0A062 /* LaunchScreen.storyboard */; };
 		5869DB8E1F7385D700B0A062 /* SelfigramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5869DB8D1F7385D700B0A062 /* SelfigramTests.swift */; };
 		5869DB991F7385D700B0A062 /* SelfigramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5869DB981F7385D700B0A062 /* SelfigramUITests.swift */; };
+		58C916641F7CBD55004F6D3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C916631F7CBD55004F6D3C /* ProfileViewController.swift */; };
+		58DCE7AB1F7B29FA007D7531 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DCE7AA1F7B29FA007D7531 /* User.swift */; };
+		58DCE7AD1F7B2ECB007D7531 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DCE7AC1F7B2ECB007D7531 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582843731F8458C300A9651A /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		584E94F41F8702410015F0E9 /* SelfieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieCell.swift; sourceTree = "<group>"; };
 		5869DB751F7385D700B0A062 /* Selfigram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfigram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5869DB781F7385D700B0A062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5869DB7A1F7385D700B0A062 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		5869DB941F7385D700B0A062 /* SelfigramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfigramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5869DB981F7385D700B0A062 /* SelfigramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfigramUITests.swift; sourceTree = "<group>"; };
 		5869DB9A1F7385D700B0A062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C916631F7CBD55004F6D3C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		58DCE7AA1F7B29FA007D7531 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		58DCE7AC1F7B2ECB007D7531 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 			children = (
 				5869DB781F7385D700B0A062 /* AppDelegate.swift */,
 				5869DB7A1F7385D700B0A062 /* ViewController.swift */,
+				58C916631F7CBD55004F6D3C /* ProfileViewController.swift */,
+				582843731F8458C300A9651A /* FeedTableViewController.swift */,
+				584E94F41F8702410015F0E9 /* SelfieCell.swift */,
+				58DCE7AA1F7B29FA007D7531 /* User.swift */,
+				58DCE7AC1F7B2ECB007D7531 /* Post.swift */,
 				5869DB7C1F7385D700B0A062 /* Main.storyboard */,
 				5869DB7F1F7385D700B0A062 /* Assets.xcassets */,
 				5869DB811F7385D700B0A062 /* LaunchScreen.storyboard */,
@@ -260,7 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5869DB7B1F7385D700B0A062 /* ViewController.swift in Sources */,
+				582843741F8458C300A9651A /* FeedTableViewController.swift in Sources */,
+				584E94F51F8702410015F0E9 /* SelfieCell.swift in Sources */,
 				5869DB791F7385D700B0A062 /* AppDelegate.swift in Sources */,
+				58C916641F7CBD55004F6D3C /* ProfileViewController.swift in Sources */,
+				58DCE7AB1F7B29FA007D7531 /* User.swift in Sources */,
+				58DCE7AD1F7B2ECB007D7531 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
