@@ -15,7 +15,7 @@ class FeedTableViewController: UITableViewController, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=3fccd6ec8f3def7518da07e5738ace9c&tags=dog")!
+        let url = URL(string: "https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=3fccd6ec8f3def7518da07e5738ace9c&tags=doughnut")!
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) -> Void in
             
