@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,10 +120,24 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krd-od-SYw">
+                                            <rect key="frame" x="352" y="258" width="23" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="JsZ-4K-TqC"/>
+                                                <constraint firstAttribute="width" constant="23" id="P4l-6c-hTq"/>
+                                            </constraints>
+                                            <state key="normal" image="hearts-off"/>
+                                            <state key="selected" image="hearts-on"/>
+                                            <connections>
+                                                <action selector="likeButtonClicked:" destination="FkY-Qg-gsS" eventType="touchUpInside" id="goq-1A-2f5"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="qni-q5-Uoz" firstAttribute="leading" secondItem="I6q-3k-YDP" secondAttribute="leading" id="8y8-IZ-4xn"/>
+                                        <constraint firstItem="krd-od-SYw" firstAttribute="trailing" secondItem="I6q-3k-YDP" secondAttribute="trailingMargin" constant="8" id="DL6-LK-CT9"/>
                                         <constraint firstItem="aVb-Tb-JyH" firstAttribute="leading" secondItem="I6q-3k-YDP" secondAttribute="leadingMargin" id="IqO-Gd-0rU"/>
+                                        <constraint firstItem="krd-od-SYw" firstAttribute="top" secondItem="qni-q5-Uoz" secondAttribute="bottom" constant="8" id="Vi1-t7-Deo"/>
                                         <constraint firstItem="aVb-Tb-JyH" firstAttribute="top" secondItem="qni-q5-Uoz" secondAttribute="bottom" constant="8" id="aoK-Mn-T48"/>
                                         <constraint firstItem="qni-q5-Uoz" firstAttribute="top" secondItem="I6q-3k-YDP" secondAttribute="top" id="dOr-YI-W81"/>
                                         <constraint firstAttribute="trailing" secondItem="qni-q5-Uoz" secondAttribute="trailing" id="dZM-0g-8xN"/>
@@ -133,6 +147,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="commentLabel" destination="FPo-G4-zBF" id="wlS-y1-u3A"/>
+                                    <outlet property="likeButton" destination="krd-od-SYw" id="SY8-Hb-vYD"/>
                                     <outlet property="selfieImageView" destination="qni-q5-Uoz" id="FKN-Dv-nqU"/>
                                     <outlet property="usernameLabel" destination="aVb-Tb-JyH" id="0Jd-r2-jtr"/>
                                 </connections>
@@ -250,6 +265,8 @@
         <image name="Activities" width="25" height="25"/>
         <image name="NewsFeed" width="25" height="25"/>
         <image name="Profile" width="25" height="25"/>
+        <image name="hearts-off" width="42" height="37"/>
+        <image name="hearts-on" width="42" height="37"/>
         <image name="placeholder" width="256" height="256"/>
     </resources>
 </document>
